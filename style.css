@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --theme-color-dark-blue: #3C6A98;
+  --theme-color-light-blue: #4C91D4;
+  --theme-color-orange: #FF6D55;
+  --theme-color-yellow: #FDD04C;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.flex-container {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  border: 1px solid #dedede;
+  box-shadow: 0.3rem 0.3rem 1rem 0.1rem rgba(222,222,222,0.75);
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  color: var(--theme-color-dark-blue);
+}
+
+p {
+  text-align: center;
+}
+
+.btn {
+  color: white;
+  background: var(--theme-color-light-blue);
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  padding: 0.3rem 1rem;
+}
+
+.logo-img {
+  width: 150px;
+  margin-bottom: 1rem;
+}
+
+.currency {
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.currency select {
+  padding: 0.8rem 1rem 0.8rem 0.8rem;
+  border: 1px solid var(--theme-color-orange);
+  border-radius: 5px;
+  font-size: 1rem;
+  background: transparent;
+}
+
+.currency input {
+  border: 0;
+  background: transparent;
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+.swap-rate-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rate {
+  color: var(--theme-color-light-blue);
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+select:focus, input:focus, button:focus {
+  outline: 0;
+}
+
